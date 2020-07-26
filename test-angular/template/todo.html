@@ -1,0 +1,28 @@
+<div style="margin: auto; display: flex">
+    <div style="margin: auto">
+        <h2 style="text-align: center; border-bottom: 2px solid black">{{ value2.appName1 }}</h2>
+        <br>
+        Add Task:&nbsp;<input type="text" name="addtask" ng-model="taske" autocomplete="off" required>
+        Task Status:&nbsp;<input type="checkbox" name="addstatus" ng-model="status">
+        <button ng-click="add()">Submit</button>
+        <!--<button ng-click="remove()">clear</button>-->
+        <br>
+        {{ taske }}<br>
+        <table style="margin: auto">
+            <tr>
+                <td>&nbsp;&nbsp;SrNo&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;Tasks&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;Status&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr ng-repeat="task in tasks" ng-model="fun">
+                <td>&nbsp;&nbsp;{{ task.SrNo }}&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;{{ task.Task }}&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;{{ task.Status }}&nbsp;&nbsp;</td>
+                <td style="color: crimson; cursor: pointer; font-size: 10px; font-weight: bolder" ng-click="delete()">&nbsp;&nbsp;&#9587;&nbsp;&nbsp;</td>
+            </tr>
+        </table>
+        <br>
+        <h4 style="text-align: center; border-top: 2px solid black">{{ value1.version2 }}</h4>
+    </div>
+</div>

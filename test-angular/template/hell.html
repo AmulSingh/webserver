@@ -1,0 +1,21 @@
+<div style="margin: auto; display: flex">
+    <div style="margin: auto">
+        <h2 style="text-align: center; border-bottom: 2px solid black">{{ value2.appName2 }}</h2>
+        <br>
+        <table style="margin: auto">
+            <tr>
+                <td>Fruits</td>
+                <td>Price</td>
+            </tr>
+            <tr ng-repeat="list in marketlist">
+                <td>{{ list.fruit }}</td>
+                <td>{{ list.price }}</td>
+            </tr>
+        </table><br>
+        <div style="margin: auto; display: flex">
+            <button style="margin: auto"><a href="#!/todo" style="text-decoration: none; color: black; font-weight:bolder; font-size: 12px;">TODO APP</a></button>
+        </div>
+        <br>
+        <h4 style="text-align: center; border-top: 2px solid black">{{ value1.version1 }}</h4>
+    </div>
+</div>
